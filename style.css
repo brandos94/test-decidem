@@ -1,0 +1,245 @@
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #fafafa;
+  --color-text-main: #000000;
+  --color-primary: #000000;
+  --wrapper-height: 87vh;
+  --image-margin: 3rem;
+  --image-width: 300px;
+  --font-family: "Arial", "Impact";
+  --font-family-header: "Arial";
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+.header {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+}
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+.header img {
+  height: 64px;
+  width: 64px;
+}
+.horizontal-list {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.horizontal-list a {
+  color: black;
+  text-decoration: none;
+  font-family: Arial;
+}
+
+.horizontal-list a:hover {
+  color: grey;
+}
+
+input[placeholder="Search.."] {
+  font-family: Arial;
+  border: none;
+}
+z
+  
+  
+  /* Navigation grid */
+  .footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  padding: 1rem 0 0.75rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  border-top: 4px solid #fff;
+}
+
+.footer a:not(.btn--remix):link,
+a:not(.btn--remix):visited {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #000;
+  text-decoration: none;
+  border-style: none;
+}
+.footer a:hover {
+  background: var(--color-primary);
+}
+
+.footer .links {
+  padding: 0.5rem 1rem 1.5rem;
+  white-space: nowrap;
+}
+
+.divider {
+  padding: 0 1rem;
+}
+
+body {
+  font-family: Arial;
+  background-color: var(--color-bg);
+}
+
+/* Page structure */
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Very light scaling for our illustration */
+.title {
+  color: #000000;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 105%;
+  text-align: center;
+  margin: 0;
+}
+
+/* Very light scaling for our illustration */
+.illustration {
+  max-width: 100%;
+  max-height: var(--image-max-width);
+  margin-top: var(--image-margin);
+}
+
+/* Instructions */
+.instructions {
+  margin: 1rem auto 0;
+  font-family: arial;
+  position: absolute;
+
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 52px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #000000;
+}
+
+/* Button - Add it from the README instructions */
+button,
+input {
+  font-family: Arial;
+  font-size: 100%;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  transition: 500ms;
+}
+
+/* Subheading */
+h2 {
+  color: #000000;
+}
+
+/* Interactive image */
+.illustration:active {
+  transform: translateY(5px);
+}
+
+/* Button dip
+  - Toggling this class on and off will move it down and up again
+  - The button transition property above determines the speed of the translate (500ms)
+  */
+.dipped {
+  transform: translateY(5px);
+}
+.container {
+  position: relativefill;
+  text-align: center;
+  color: rgb(251, 251, 251);
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: #fafafa;
+}
+.hero {
+  height: 466px;
+}
+.first {
+  text-align: center;
+  font-size: 40px;
+}
+.platform {
+  text-align: center;
+  font-size: 40px;
+}
+.read {
+  font-size: 32px;
+  text-align: center;
+}
+.title-red {
+  position: relative;
+}
+
+.title-red::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: red;
+}
+
+.maps {
+  display: block;
+  width: 100%;
+  height: 500px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
