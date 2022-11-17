@@ -4,38 +4,53 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <link href='https://css.gg/globe-alt.css' rel='stylesheet'>
+    <link href='https://css.gg/enter.css' rel='stylesheet'>
+    <link href='https://css.gg/danger.css' rel='stylesheet'>
     <title>Decidim Demo</title>
 
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
     <header class="header" id="myHeader">
-      <img src="https://avatars.githubusercontent.com/u/22474646?s=200&v=4" />
+      <div class="try">
+        <img src="https://avatars.githubusercontent.com/u/22474646?s=200&v=4" />
+        <p>Try Decidim Demo</p>
+      </div>
       <nav>
+        <div class="navbar">
         <ul class="horizontal-list">
           <li>
-            <input type="text" placeholder="Search.." />
+            <input  type="text" class="search-bar" placeholder="Search..." />
           </li>
           <li>
-            <a href="/">Home</a>
+            <a class="active" href="/"><i class="gg-globe-alt"></i>Language</a>
           </li>
           <li>
-            <a href="/contact.html">Contact us</a>
+            <a class="active" href="/"><i class="gg-danger"></i>Help</a>
           </li>
           <li>
-            <a href="/store.html">Store</a>
-          </li> 
+            <a class="active" href="/"><i class="gg-enter"></i>Log In</a>
+          </li>
         </ul>
       </nav>
     </header>
     <div>
       <div class="container-pic">
-      <img
-        class="hero" src="https://tinyurl.com/2p9dvu6n" alt="Barcelona city">
-        <div class="centered">Welcome to the participatory platform decidim.demo</div>
+        <img
+          class="hero"
+          src="https://tinyurl.com/2p9dvu6n"
+          alt="Barcelona city"
+        />
+        <div class="centered">
+          <strong
+            >Welcome to the participatory <br />
+            platform decidim.demo</strong
+          >
+        </div>
+      </div>
     </div>
-  </div>
     <section>
       <div class="first">
         <h2>
@@ -45,25 +60,64 @@
       <p class="platform">A platform to build the city we want.</p>
       <p class="read">Read more about decidim.demo</p>
     </section>
+<!-- carousel -->
+<section>
+  <div class="carousel-body">
+  <div class="container-carousel">
+    <input type="radio" name="slider" id="item-1" checked />
+    <input type="radio" name="slider" id="item-2" />
+    <input type="radio" name="slider" id="item-3" />
+    <div class="cards">
+      <label class="card" for="item-1" id="song-1">
+        <img
+          src="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80"
+          alt="song"
+        />
+      </label>
+      <label class="card" for="item-2" id="song-2">
+        <img
+          src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
+          alt="song"
+        />
+        <div class="text-wrapper">
+          <p>text</p>
+        </div>
+      </label>
+      <label class="card" for="item-3" id="song-3">
+        <img
+          src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
+          alt="song"
+        />
+      </label>
+    </div>
+  </div>
+  </div>
+</section>
 
-      <!--MAPS-->
-      <div class="container">
-        <h1 class="title-red">Meetings</h1>
+<!-- carousel--- -->
 
-        <!-- Write down an adress. Click on "share" and copy the emded -->
-        <iframe
-          class="maps"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2036.895876239748!2d18.088613251792232!3d59.30129618155892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f76531e8f486d%3A0xb1089ef73e808a1d!2sHyper%20Island!5e0!3m2!1sen!2sse!4v1668611057506!5m2!1sen!2sse"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          id="iframe"
-        ></iframe>
-        <div></div>
-        <!-- <-----------Calendar--------->
+    <!--MAPS-->
+    <div class="container">
+      <h1 class="title-red">Meetings</h1>
+
+      <!-- Write down an adress. Click on "share" and copy the emded -->
+      <iframe
+        class="maps"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2036.895876239748!2d18.088613251792232!3d59.30129618155892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f76531e8f486d%3A0xb1089ef73e808a1d!2sHyper%20Island!5e0!3m2!1sen!2sse!4v1668611057506!5m2!1sen!2sse"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        id="iframe"
+      ></iframe>
+    </div>
+    <!-- <-------Maps Sections------>
+    <section class="grid col-3">
+      <!-- <-----------Calendar--------->
+      <div class="calendar-wrapper">
+        <p>June 2022</p>
         <div class="calendar">
           <!-- Week days -->
           <div class="calendar__weekday">Mon</div>
@@ -73,11 +127,11 @@
           <div class="calendar__weekday">Fri</div>
           <div class="calendar__weekday">Sat</div>
           <div class="calendar__weekday">Sun</div>
-      
+
           <!-- Days of the previous month -->
           <div class="calendar__day calendar__day--disabled">30</div>
           <div class="calendar__day calendar__day--disabled">31</div>
-      
+
           <!-- Days of the current month -->
           <div class="calendar__day">1</div>
           <div class="calendar__day">2</div>
@@ -95,7 +149,7 @@
           <div class="calendar__day">14</div>
           <div class="calendar__day">15</div>
           <div class="calendar__day">16</div>
-           <!-- The current day -->
+          <!-- The current day -->
           <div class="calendar__day calendar__day--current">17</div>
           <div class="calendar__day">18</div>
           <div class="calendar__day">19</div>
@@ -110,16 +164,21 @@
           <div class="calendar__day">28</div>
           <div class="calendar__day">29</div>
           <div class="calendar__day">30</div>
-        
-      
+
           <!-- Days of the next month -->
           <div class="calendar__day calendar__day--disabled">1</div>
           <div class="calendar__day calendar__day--disabled">2</div>
         </div>
+      </div>
+      <div class="meetings">
+        <div>Upcoming Meetings</div>
+        <div>See All Meetings</div>
+      </div>
+    </section>
 
-        <!-- <div class="video-container"> -->
-          <!-- Find the video on YouTube. Click on "share" and "embed". Copy the code and paste the iframe in your html.  -->
-          <!-- <iframe
+    <!-- <div class="video-container"> -->
+    <!-- Find the video on YouTube. Click on "share" and "embed". Copy the code and paste the iframe in your html.  -->
+    <!-- <iframe
             width="560"
             height="315"
             src="https://www.youtube.com/embed/lRaL-8qZ0mM"
@@ -128,8 +187,8 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe> -->
-        <!-- </div> -->
-         <!-- The footer holds our remix button — you can use it for structure or cut it out ✂ -->
+    <!-- </div> -->
+    <!-- The footer holds our remix button — you can use it for structure or cut it out ✂ -->
     <!-- <footer class="footer">
       <div class="links"></div>
 
