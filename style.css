@@ -58,6 +58,8 @@ body {
 .search-bar {
   background-color: #e0dede;
   border: 0.5px black solid;
+  border-radius: 3px;
+  padding: 4px;
 }
 
 .horizontal-list a:hover {
@@ -141,17 +143,21 @@ body {
 }
 
 /* Button - Add it from the README instructions */
-button,
-input {
+.button {
   font-family: Arial;
-  font-size: 100%;
-  background: #ffffff;
-  border: 1px solid #000000;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  padding: 20px 50px;
+  margin: 10px;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 0.5rem 1rem;
-  transition: 500ms;
   border: none;
+}
+.button-align {
+  justify-content: center;
+  display: flex;
 }
 
 /* Subheading */
@@ -171,6 +177,10 @@ h2 {
 .dipped {
   transform: translateY(5px);
 }
+.container {
+  padding: 50px;
+}
+
 .container-pic {
   position: relative;
   text-align: center;
@@ -195,14 +205,16 @@ h2 {
 .first {
   text-align: center;
   font-size: 40px;
+  padding: 4px;
 }
 .platform {
   text-align: center;
   font-size: 40px;
 }
 .read {
-  font-size: 32px;
+  font-size: 28px;
   text-align: center;
+  font-weight: bold;
 }
 .title-red {
   position: relative;
@@ -213,8 +225,9 @@ h2 {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 40px;
+  width: 45px;
   height: 3px;
+  border-radius: 2px;
   background-color: red;
 }
 
@@ -409,7 +422,7 @@ input[type="radio"] {
   margin-bottom: 20px;
 }
 
-img {
+.img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -449,8 +462,35 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: white;
+  background-color: #f0f0f0;
   height: 50%;
   width: 100%;
   border-radius: 0 0 10px 10px;
+}
+/* playground */
+.text-wrapper1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #f0f0f0;
+  height: 50%;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+}
+/* subway */
+.text-wrapper2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #f0f0f0;
+  height: 50%;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+}
+.img1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
