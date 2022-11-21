@@ -16,6 +16,7 @@
 }
 body {
   margin: 0px;
+  padding-bottom: 50px;
   font-family: Arial;
   background-color: var(--color-bg);
 }
@@ -57,9 +58,9 @@ body {
 }
 .search-bar {
   background-color: #e0dede;
-  border: 0.5px black solid;
+  border: none;
   border-radius: 3px;
-  padding: 4px;
+  padding: 10px 20px;
 }
 
 .horizontal-list a:hover {
@@ -164,6 +165,11 @@ body {
 h2 {
   color: #000000;
 }
+h3 {
+  font-size: 25px;
+  margin: 0px;
+  padding: 0px;
+}
 
 /* Interactive image */
 .illustration:active {
@@ -178,7 +184,8 @@ h2 {
   transform: translateY(5px);
 }
 .container {
-  padding: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .container-pic {
@@ -236,6 +243,32 @@ h2 {
   display: block;
   width: 100%;
   height: 500px;
+}
+/*Take part process*/
+.take-part-process {
+  justify-content: center;
+  display: flex;
+  margin: 20px;
+}
+.column {
+  float: center;
+  width: 100%;
+  text-align: center;
+  max-width: 30%;
+  padding: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: center;
+  display: table;
+  clear: both;
+}
+.process-heading {
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  color: black;
+  font-size: 32px;
 }
 
 .video-container {
@@ -354,11 +387,9 @@ a:not(.btn--remix):visited {
   .col-4 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-
   .calender-wrapper {
     grid-column: 1 / 2;
   }
-
   .meetings {
     grid-column: 2 / 4;
   }
@@ -369,6 +400,16 @@ a:not(.btn--remix):visited {
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+.upcoming-meetings {
+  justify-content: center;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+}
+.h2-meetings {
+  font-size: 25px;
+  color: blueviolet;
 }
 
 /* carousel */
@@ -382,7 +423,7 @@ a:not(.btn--remix):visited {
   transition: background 0.4s ease-in;
   background-color: #f0f0f0;
   width: 100vw;
-  height: 100vh;
+  height: 60vh;
 }
 
 .carousel-body.blue {
@@ -500,13 +541,83 @@ input[type="radio"] {
 }
 /* Diving line */
 .line {
-  position: absolute;
-  margin-right: 0;
-  left: 0;
-  height: 1px;
-  width: 100%;
-  border-bottom: 3px solid #d9d9d9;
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 2px solid #d9d9d9;
+  border-radius: 1px;
+}
+.short-line {
+  border: 2px solid rgb(255, 0, 195);
+  border-radius: 1px;
 }
 .cardheading {
   font-size: 28px;
+}
+.see-more {
+  justify-content: flex-end;
+  display: flex;
+  font-size: 20px;
+  padding-right: 60px;
+}
+/* ----------NEW CARDS BRANDON-------- */
+.card-wrapper {
+  height: 100%;
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 235px;
+  background-color: gray;
+  display: block;
+}
+
+.tag {
+  gap: 0px;
+  padding-top: 10px;
+}
+
+.tag-image {
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+  padding-left: 0;
+}
+
+.card3 {
+  justify-content: space-between;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #d9d9d9;
+}
+
+.flex article {
+  width: 350px;
+}
+/* -----Activity--- */
+.activity {
+  justify-content: center;
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.hours {
+}
+.proposal {
+  font-size: 20px;
+  padding-left: 50px;
 }
