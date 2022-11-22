@@ -548,6 +548,15 @@ input[type="radio"] {
   border: 2px solid #d9d9d9;
   border-radius: 1px;
 }
+.line1 {
+  width: 60%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #d9d9d9;
+  border-radius: 1px;
+  text-align: center;
+}
 .short-line {
   border: 2px solid rgb(255, 0, 195);
   border-radius: 1px;
@@ -614,10 +623,23 @@ input[type="radio"] {
   display: flex;
   padding-left: 50px;
   padding-right: 50px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 .hours {
+  padding: 7px;
+  color: grey;
+  font-size: 16px;
 }
 .proposal {
   font-size: 20px;
   padding-left: 50px;
+  padding-right: 20px;
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding-left: 0;
+  padding-top: 0;
 }
