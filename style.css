@@ -56,11 +56,36 @@ body {
   font-family: Arial;
   font-size: medium;
 }
-.search-bar {
+/* .search-bar {
   background-color: #e0dede;
   border: none;
   border-radius: 3px;
-  padding: 10px 20px;
+  padding: 10px 20px; */
+/* } */
+/* test */
+.search-bar {
+  width: 100%;
+  position: relative;
+}
+
+.search-bar input {
+  width: calc(100% - 60px);
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  padding: 0 30px;
+}
+
+.search-ico {
+  position: absolute;
+  left: 10px;
+  top: 8px;
+}
+.microphone-ico {
+  position: absolute;
+  right: 10px;
+  top: 8px;
 }
 
 .horizontal-list a:hover {
@@ -325,6 +350,21 @@ h3 {
   border-top: 4px solid #fff;
 } */
 
+.no-space {
+  padding: 0px;
+  margin: 0px;
+  font-size: 25px;
+  color: black;
+}
+.no-space-p {
+  padding-bottom: 15px;
+  margin: 0px;
+  font-size: 15px;
+  color: black;
+}
+.p {
+  margin: 4px;
+}
 .footer a:not(.btn--remix):link,
 a:not(.btn--remix):visited {
   font-family: Arial;
@@ -411,6 +451,9 @@ a:not(.btn--remix):visited {
   font-size: 25px;
   color: blueviolet;
 }
+.align-calender {
+  align-items: center;
+}
 
 /* carousel */
 
@@ -423,7 +466,7 @@ a:not(.btn--remix):visited {
   transition: background 0.4s ease-in;
   background-color: #f0f0f0;
   width: 100vw;
-  height: 60vh;
+  height: 70vh;
 }
 
 .carousel-body.blue {
@@ -558,8 +601,8 @@ input[type="radio"] {
   text-align: center;
 }
 .short-line {
-  border: 2px solid rgb(255, 0, 195);
-  border-radius: 1px;
+  border: 2px;
+  color: #d9d9d9;
 }
 .cardheading {
   font-size: 28px;
@@ -591,7 +634,13 @@ input[type="radio"] {
   height: 100%;
   object-fit: contain;
   padding: 10px;
-  padding-left: 0;
+  max-width: 400px;
+}
+.tag-cal {
+  height: 70px;
+  width: 70px;
+  float: left;
+  padding: 10px;
 }
 
 .card3 {
@@ -609,7 +658,7 @@ input[type="radio"] {
 
 .card-button {
   border: none;
-  padding: 10px 20px;
+  padding: 5px 10px;
   border-radius: 5px;
   background-color: #d9d9d9;
 }
@@ -642,4 +691,7 @@ input[type="radio"] {
   border-radius: 50%;
   padding-left: 0;
   padding-top: 0;
+}
+.footer {
+  max-width: 1280px;
 }
