@@ -77,7 +77,7 @@
 }
 body {
   margin: 0px;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
   font-family: Arial;
   background-color: var(--color-bg);
 }
@@ -465,7 +465,7 @@ a:not(.btn--remix):visited {
 }
 .h2-meetings {
   font-size: 25px;
-  color: blueviolet;
+  color: black;
 }
 .align-calender {
   align-items: center;
@@ -728,7 +728,6 @@ input[type="radio"] {
   .col-4 {
     grid-template-columns: 1fr;
   }
-  /*Angelica*/
   .hero {
     max-height: 200px;
   }
@@ -756,7 +755,7 @@ input[type="radio"] {
     padding: 0px;
   }
   .line {
-    margin-top: 0px;
+    margin-top: 15px;
     margin-bottom: 0px;
   }
   .see-more {
@@ -789,11 +788,77 @@ input[type="radio"] {
   .card-wrapper {
     padding-bottom: 40px;
   }
-  .process-heading,
-  h1 {
+  .process-heading {
     align-items: center;
+    font-size: 23px;
+    padding: 10px;
     text-align: center;
-    font-size: 25px;
+  }
+  .take-part-process {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .column {
+    padding: 3px;
+    max-width: fit-content;
+    align-items: center;
+  }
+  .p {
+    width: auto;
+  }
+  .h3 {
+    font-size: 18px;
+  }
+  .title-red {
+    align-items: right;
+  }
+  .activity {
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+  }
+  .proposal {
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px 8px 0px 10px;
+  }
+  .hours {
+    text-align: center;
+  }
+  .line1 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #d9d9d9;
+  }
+  .horizontal-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+  }
+  .horizontal-list {
+    max-width: fit-content;
+  }
+  .navbar {
+    align-items: right;
+  }
+  .body {
+    padding: 0px;
+  }
+  .container {
+    padding: 15px;
+  }
+  .calendar {
+    justify-content: center;
+  }
+  .no-space {
+    font-size: 18px;
+  }
+  .see-more {
+    align-items: top;
   }
   /* brandon */
   .activity {
@@ -801,7 +866,6 @@ input[type="radio"] {
     padding: 0px;
   }
 }
-
 /* Tablet */
 @media (min-width: 640px) and (max-width: 1280px) {
   .col-2 {
