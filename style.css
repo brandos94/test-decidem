@@ -746,12 +746,12 @@ input[type="radio"] {
   white-space: nowrap;
 }
 
-nav a {
+/* nav a {
   color: white;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
-}
+} */
 
 nav a:hover {
   color: black;
