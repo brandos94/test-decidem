@@ -690,8 +690,8 @@ input[type="radio"] {
 /* -----Activity--- */
 .activity {
   display: flex;
-  justify-content: center;
-  padding-left: 50px;
+  /* justify-content: center; */
+  padding-left: 360px;
   padding-right: 50px;
   padding-bottom: 20px;
   padding-top: 20px;
@@ -794,6 +794,11 @@ input[type="radio"] {
     align-items: center;
     text-align: center;
     font-size: 25px;
+  }
+  /* brandon */
+  .activity {
+    margin: 0px;
+    padding: 0px;
   }
 }
 
