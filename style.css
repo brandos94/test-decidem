@@ -390,51 +390,6 @@ a:not(.btn--remix):visited {
   gap: var(--gap, 1rem);
 }
 
-/* Mobile */
-@media (max-width: 640px) {
-  .col-2 {
-    grid-template-columns: 1fr;
-  }
-  .col-3 {
-    grid-template-columns: 1fr;
-  }
-  .col-4 {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Tablet */
-@media (min-width: 640px) and (max-width: 1280px) {
-  .col-2 {
-    grid-template-columns: 1fr;
-  }
-  .col-3 {
-    grid-template-columns: 1fr;
-  }
-  .col-4 {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-/* Desktop and up */
-@media (min-width: 1280px) {
-  .col-2 {
-    grid-template-columns: 1fr 1fr;
-  }
-  .col-3 {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .col-4 {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  .calender-wrapper {
-    grid-column: 1 / 2;
-  }
-  .meetings {
-    grid-column: 2 / 4;
-  }
-}
-
 .calendar-wrapper {
   justify-content: center;
   align-items: center;
@@ -649,6 +604,7 @@ input[type="radio"] {
     0 4px 6px -4px rgb(0 0 0 / 0.1);
   border-radius: 10px;
   padding: 20px;
+  border: solid 1px #c8c8c8;
 }
 
 .button-wrapper {
@@ -695,4 +651,115 @@ input[type="radio"] {
 }
 .fa-clock-o {
   padding-right: 10px;
+}
+/* Mobile */
+@media (max-width: 640px) {
+  .col-2 {
+    grid-template-columns: 1fr;
+  }
+  .col-3 {
+    grid-template-columns: 1fr;
+  }
+  .col-4 {
+    grid-template-columns: 1fr;
+  }
+  /*Angelica*/
+  .hero {
+    max-height: 200px;
+  }
+  .centered {
+    font-size: 25px;
+  }
+  .first {
+    font-size: 20px;
+    padding: 0px;
+  }
+  .platform {
+    font-size: 20px;
+  }
+  .read {
+    font-size: 18px;
+  }
+  .button-align {
+    flex-direction: column;
+    align-items: center;
+  }
+  .button {
+    width: 280px;
+    height: 50px;
+    font-size: 17px;
+    padding: 0px;
+  }
+  .line {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .see-more {
+    font-size: 15px;
+    padding-right: 20px;
+  }
+  .carousel-body {
+    padding: 2px;
+    height: 50vh;
+  }
+  .container {
+    padding-bottom: 10px;
+  }
+  .container-carousel {
+    margin-bottom: 0px;
+  }
+  .cards {
+    margin: 0px;
+  }
+  .cardheading {
+    font-size: 15px;
+  }
+  .content-wrapper {
+    max-width: 50px;
+  }
+  .tag-image {
+    width: 255px;
+    padding: 0px;
+  }
+  .card-wrapper {
+    padding-bottom: 40px;
+  }
+  .process-heading,
+  h1 {
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 640px) and (max-width: 1280px) {
+  .col-2 {
+    grid-template-columns: 1fr;
+  }
+  .col-3 {
+    grid-template-columns: 1fr;
+  }
+  .col-4 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Desktop and up */
+@media (min-width: 1280px) {
+  .col-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .col-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .col-4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .calender-wrapper {
+    grid-column: 1 / 2;
+  }
+  .meetings {
+    grid-column: 2 / 4;
+  }
 }
