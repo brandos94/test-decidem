@@ -19,3 +19,16 @@ function myFunction() {
 document.querySelector("input").addEventListener("change", function () {
   document.querySelector("body").classList.toggle("blue");
 });
+// header js
+const menu = document.querySelector(".menu");
+let open;
+
+function openMenu() {
+  if (open) {
+    menu.style.display = "none";
+    open = false;
+  } else if (!open) {
+    menu.style.display = "block";
+    open = true;
+  }
+}

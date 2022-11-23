@@ -19,6 +19,37 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+    <!-- new header -->
+    <header class="header" id="myHeader">
+      <div class="try mobileHeader">
+        <img src="https://avatars.githubusercontent.com/u/22474646?s=200&v=4" />
+        <p>Try Decidim Demo</p>
+        <button onclick="{openMenu()}" class="hamburger">Menu</button>
+      </div>
+      <nav>
+        <div class="navbar menu">
+        <ul class="horizontal-list">
+          <li>
+            <div class="search-bar">
+            <input type="text" placeholder="Search..." />
+            <i class="fa fa-microphone search-ico"></i>
+            <!-- <i class="fa fa-microphone microphone-ico"></i> -->
+            </div>
+          </li>
+          <li>
+            <a class="active" href="/"><i class="gg-globe-alt"></i>Language</a>
+          </li>
+          <li>
+            <a class="active" href="/"><i class="gg-danger"></i>Help</a>
+          </li>
+          <li>
+            <a class="active" href="/"><i class="gg-enter"></i>Log In</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- header end -->
+    <!-- Old header
     <header class="header" id="myHeader">
       <div class="try">
         <img src="https://avatars.githubusercontent.com/u/22474646?s=200&v=4" />
@@ -32,7 +63,7 @@
             <input type="text" placeholder="Search..." />
             <i class="fa fa-microphone search-ico"></i>
             <!-- <i class="fa fa-microphone microphone-ico"></i> -->
-            </div>
+            <!-- </div>
           </li>
           <li>
             <a class="active" href="/"><i class="gg-globe-alt"></i>Language</a>
@@ -46,7 +77,8 @@
           </li>
         </ul>
       </nav>
-    </header>
+    </header> -->
+    <!-- old header end -->
     <div>
       <div class="container-pic">
         <img
