@@ -645,7 +645,8 @@ input[type="radio"] {
 
 .card3 {
   justify-content: space-between;
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  box-shadow: 10px 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
   border-radius: 10px;
   padding: 20px;
 }
