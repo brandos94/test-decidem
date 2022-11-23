@@ -628,9 +628,8 @@ input[type="radio"] {
 }
 /* -----Activity--- */
 .activity {
-  justify-content: center;
   display: flex;
-  padding-left: 50px;
+  padding-left: 360px;
   padding-right: 50px;
   padding-bottom: 20px;
   padding-top: 20px;
