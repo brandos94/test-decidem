@@ -508,6 +508,7 @@ input[type="radio"] {
   width: 100%;
   border-radius: 0 0 10px 10px;
   padding: 20px;
+  border: solid 1px #c8c8c8;
 }
 /* playground */
 .text-wrapper1 {
@@ -519,6 +520,7 @@ input[type="radio"] {
   width: 100%;
   border-radius: 0 0 10px 10px;
   padding: 20px;
+  border: solid 1px #c8c8c8;
 }
 /* subway */
 .text-wrapper2 {
@@ -530,6 +532,7 @@ input[type="radio"] {
   width: 100%;
   border-radius: 0 0 10px 10px;
   padding: 20px;
+  border: solid 1px #c8c8c8;
 }
 .img1 {
   width: 100%;
