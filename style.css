@@ -690,10 +690,12 @@ input[type="radio"] {
 /* -----Activity--- */
 .activity {
   display: flex;
-  padding-left: 360px;
+  justify-content: center;
+  padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 20px;
   padding-top: 20px;
+  text-align: center;
 }
 .hours {
   padding: 7px;
